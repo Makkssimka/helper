@@ -30,7 +30,7 @@ class ImageController
         $data['title'] = 'Обработанные изображения';
         $data['url_current'] = Router::current();
 
-        foreach (glob("tmp/*.*") as $file) {
+        foreach (glob("tmp_images/*.*") as $file) {
             unlink($file);
         }
 
@@ -50,7 +50,7 @@ class ImageController
         $options->setSendHttpHeaders(true);
 
         $zip = new ZipStream('images.zip', $options);
-        foreach (glob("tmp/*.*") as $file) {
+        foreach (glob("tmp_images/*.*") as $file) {
             $info = pathinfo($file);
             $zip->addFileFromPath($info['basename'], $file);
             unlink($file);

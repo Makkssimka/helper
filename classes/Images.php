@@ -8,7 +8,7 @@ class Images
     private $files = array();
     private $result_files = array();
     private $errors = array();
-    private $path = 'tmp/';
+    private $path = 'tmp_images/';
 
     public function __construct($files)
     {
