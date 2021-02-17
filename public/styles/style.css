@@ -1,0 +1,57 @@
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif; }
+
+.errors-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .errors-wrapper .errors-string {
+    display: flex;
+    align-items: center; }
+  .errors-wrapper .errors-pointer {
+    display: inline-block;
+    height: 18px;
+    width: 3px;
+    background-color: #666;
+    margin-left: 8px;
+    animation: errors-pointer-flicker linear 1s infinite; }
+  .errors-wrapper .errors-code {
+    color: #e63946; }
+
+@keyframes errors-pointer-flicker {
+  40% {
+    opacity: 1; }
+  60% {
+    opacity: 0; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.hide-input {
+  width: 1px;
+  height: 1px;
+  position: fixed;
+  top: -1000px; }
+
+.images-field {
+  width: 300px; }
+
+.image-item {
+  margin: 6px 0;
+  display: flex;
+  align-items: center; }
+
+.image-preview img {
+  width: 150px;
+  height: auto; }
+
+.image-header {
+  margin-bottom: 10px; }
+  .image-header .images-field {
+    font-weight: 500; }
+
+.item-errors {
+  max-width: 900px;
+  margin: 0 auto 10px; }
