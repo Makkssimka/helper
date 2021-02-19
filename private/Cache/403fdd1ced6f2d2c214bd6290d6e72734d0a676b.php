@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="uk-flex uk-flex-center uk-margin-top">
-                    <button id="select-file" class="uk-button uk-button-primary" type="submit">Обработать изображения</button>
+                    <button class="uk-button uk-button-primary" type="submit">Обработать изображения</button>
                 </div>
             </form>
         </article>

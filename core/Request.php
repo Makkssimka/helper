@@ -27,4 +27,10 @@ class Request
 
         return $result;
     }
+
+    public static function file($name)
+    {
+        $file = $_FILES[$name];
+        return $file;
+    }
 }

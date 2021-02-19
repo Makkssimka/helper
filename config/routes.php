@@ -3,8 +3,8 @@
 $routes = array(
     '/' => 'Index@index',
 
-    '/exel-create'      => 'Exel@create',
-    '/scv-create'       => 'Exel@createCsv',
+    '/csv-create'       => 'Exel@createCsv',
+    '/csv-upload'       => 'Exel@uploadCsv',
 
     '/images-create'    => 'Image@index',
     '/images-upload'    =>  'Image@upload',

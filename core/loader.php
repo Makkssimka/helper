@@ -7,6 +7,7 @@ require_once "Request.php";
 
 // Вспомагательные классы
 require_once "../classes/Images.php";
+require_once "../classes/PriceList.php";
 
 // Подключаем роуты
 require_once "../config/routes.php";
