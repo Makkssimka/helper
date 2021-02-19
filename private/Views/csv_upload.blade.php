@@ -13,7 +13,7 @@
                 <p>Создан файл: result.csv</p>
             </div>
             <div class="uk-flex uk-flex-center uk-margin-top">
-                <a href="/tmp_csv/result.csv" class="uk-button uk-button-primary" download>Скачать CSV</a>
+                <a id="download_csv" href="/tmp_csv/result.csv" class="uk-button uk-button-primary" download>Скачать CSV</a>
             </div>
         </article>
     </div>

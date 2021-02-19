@@ -54,4 +54,8 @@ $(document).ready(function () {
         let file = this.files[0];
         $('.exel-name').text(file.name);
     });
+
+    $('#download_csv').click(function () {
+        document.location.href = "/csv-create";
+    });
 });
