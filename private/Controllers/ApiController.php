@@ -20,7 +20,7 @@ class ApiController
             echo "zip=yes\nfile_limit=52428800";
         } elseif ($mode == 'file') {
             $file = "data/result.log";
-            file_put_contents($file, $_POST[$_GET['filename']]);
+            file_put_contents($file, Request::get('filename'));
         }
     }
 
