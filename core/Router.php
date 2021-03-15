@@ -13,6 +13,8 @@ class Router
     {
         $this->route = $route_array;
         $url_request = $_SERVER['REQUEST_URI'];
+        $url_request = explode('?', $url_request);
+        $url_request = $url_request[0];
         if (isset($this->route[$url_request])) {
             $action = explode('@', $this->route[$url_request]);
             $this->controller = $action[0];
