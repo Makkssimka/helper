@@ -18,6 +18,9 @@ class ApiController
             echo "success\nhash\n$val";
         } elseif ($mode == 'init') {
             echo "zip=yes\nfile_limit=52428800";
+        } elseif ($mode == 'file') {
+            $file = "data/".Request::get('filename');
+            file_put_contents($file, Request::get(Request::get('filename')));
         }
     }
 
