@@ -10,7 +10,7 @@ $routes = array(
     '/images-upload'    => 'Image@upload',
     '/images-download'  => 'Image@download',
 
-    '/load-price/1c_exchange.php'       => 'Api@loadPrice',
+    '/load-price/1c_load'       => 'Api@loadPrice',
     '/show-price'       => 'Api@showPrice'
 
 );
